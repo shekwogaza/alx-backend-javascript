@@ -1,7 +1,5 @@
-
-
-export default function getResponseFromAPI() {
+export default function getResponseFromAPI () {
     return new Promise((resolve) => {
         resolve("Yes is Promise");
     });
-}
+};
