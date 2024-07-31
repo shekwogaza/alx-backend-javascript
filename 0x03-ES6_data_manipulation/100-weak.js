@@ -1,9 +1,9 @@
 // Create and export a WeakMap instance
-export const weakMap = new WeakMap();
+export default const weakMap = new WeakMap();
 
 // Function to track API calls
-export default function queryAPI(endpoint) {
-  // Check if the endpoint is already in the WeakMap
+export function queryAPI(endpoint) {
+  // Get the current count of calls for the endpoint, defaulting to 0 if not present
   const count = weakMap.get(endpoint) || 0;
 
   // If the count is greater than or equal to 5, throw an error
