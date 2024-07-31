@@ -1,5 +1,5 @@
 // Create and export a WeakMap instance
-export default const weakMap = new WeakMap();
+export const weakMap = new WeakMap();
 
 // Function to track API calls
 export function queryAPI(endpoint) {
